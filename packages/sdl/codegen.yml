@@ -1,0 +1,16 @@
+overwrite: true
+schema: "./src/schema.ts"
+require:
+  - ts-node/register/transpile-only
+documents: null
+generates:
+  src/generated/graphql.ts:
+    config: 
+      mappers:
+        Message: '@app/database#Message'
+        Chat: '@app/database#Chat'
+        User: '@app/database#User'
+    plugins:
+      - "typescript-common"
+      - "typescript-server"
+      - "typescript-resolvers"

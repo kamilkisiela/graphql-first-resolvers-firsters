@@ -1,0 +1,17 @@
+{
+  "name": "@app/type-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@types/graphql": "14.0.5",
+    "apollo-server": "2.3.2",
+    "graphql": "14.1.1",
+    "reflect-metadata": "0.1.13",
+    "ts-node": "^8.0.1",
+    "type-graphql": "0.16.0"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  }
+}

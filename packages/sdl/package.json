@@ -1,0 +1,22 @@
+{
+  "name": "@app/sdl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@app/database": "*",
+    "@types/graphql": "14.0.5",
+    "apollo-server": "^2.3.2",
+    "graphql": "14.1.1",
+    "graphql-code-generator": "0.16.0",
+    "graphql-codegen-typescript-common": "0.16.0",
+    "graphql-codegen-typescript-resolvers": "0.16.0",
+    "graphql-codegen-typescript-server": "0.16.0",
+    "ts-node": "^8.0.1",
+    "typescript": "3.2.4"
+  },
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "graphql": "gql-gen --config codegen.yml"
+  }
+}
